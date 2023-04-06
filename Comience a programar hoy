@@ -1,0 +1,34 @@
+<!h1 encabezados->
+<!br espacios->
+<!a hiperviculos->
+<!/ cerramos con diagonal>
+
+<h1>Mi primer programa HTML</h1>
+<br>
+<br>
+¿Será esto realmente un programa?
+<br>
+Visite <a href="http://www.aluracursos.com"> Alura Latam</a>
+
+<br>
+<br>
+
+<!Empezamos Java->
+<!alert genera una ventana->
+<!script iniciamos Java->
+<!Utilizamos / para terminar instrucciones->
+
+<script>
+	alert("Esto sí es lenguaje de programación");
+</script>
+<br>
+<br>
+<br>
+
+<meta charset="UTF-8">
+<h1>Usando JavaScript por primera vez</h1>
+<script>
+    alert("Este es un pop-up en JavaScript");
+</script>
+
+Esto está fuera de JavaScript...

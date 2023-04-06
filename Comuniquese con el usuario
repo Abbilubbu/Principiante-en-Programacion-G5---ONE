@@ -1,0 +1,39 @@
+<meta charset="utf-8">
+
+<!// Comentario en Java->
+
+<h1>HTML</h1>
+La edad de Abby es...
+<br>
+?
+
+<h1>JAVA</h1>
+<script>
+	//String - Texto - Cadena
+	//Sin comillas se vuelven numeros
+
+	document.write("La edad de Abby es... <br>")
+	document.write(20+15)
+	document.write("<br>")
+	document.write("20"+"15")
+	document.write("<br>")
+	document.write("20"+15)
+
+	//document.write("22")
+	//alert("La edad de Abby es...")
+	//alert("?")
+
+	document.write("<br><br>")
+	document.write("El promedio de edad de Juan, Pedro y Carlos es...")
+	document.write("<br>")
+	document.write((20+25+15)/3)
+	document.write("<br><br>")
+	document.write("La suma de las edades de Juan, Pedro y Carlos es... <br>" + (20+25+15));
+	document.write("<br><br>")
+	document.write("Juan nació en el año...<br>" + (2020-20));
+	document.write("<br><br>")
+	document.write("Juan nació en el año...<br>" + (2020-25));
+	document.write("<br><br>")
+	document.write("Juan nació en el año...<br>" + (2020-10));
+	
+</script>

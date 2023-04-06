@@ -1,8 +1,12 @@
 <!h1 encabezados->
 <!br espacios->
 <!a hiperviculos->
-<!/ cerramos con diagonal>
+<!/ cerramos con diagonal->
+<!meta charset="utf-8" sirve para que cualquier navegador lea
+los caracteres->
+<!Las etiquetas son en minusculas->
 
+<meta charset="utf-8">
 <h1>Mi primer programa HTML</h1>
 <br>
 <br>
@@ -17,6 +21,7 @@ Visite <a href="http://www.aluracursos.com"> Alura Latam</a>
 <!alert genera una ventana->
 <!script iniciamos Java->
 <!Utilizamos / para terminar instrucciones->
+<!Las etiquetas de Java se quedan igual->
 
 <script>
 	alert("Esto sí es lenguaje de programación");
@@ -25,7 +30,6 @@ Visite <a href="http://www.aluracursos.com"> Alura Latam</a>
 <br>
 <br>
 
-<meta charset="UTF-8">
 <h1>Usando JavaScript por primera vez</h1>
 <script>
     alert("Este es un pop-up en JavaScript");

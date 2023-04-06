@@ -1,0 +1,47 @@
+<meta charset="utf-8">
+
+<h1>FUNCIONES</h1>
+    <script>
+        
+        	function BR() {
+        
+        		document.write("<br>");
+        	}
+        
+        	//El parentesis sirve como igual al momento de escribir
+        	function print(text) {
+        		
+        		document.write(text)
+        	}
+        
+        	print("La edad de Abby es...");
+        	//Solo se coloca el nombre de la funcion
+        	BR();
+        	document.write(20+15);
+        
+    </script>
+        
+<h2>Calculo diferencia de edades</h1>
+¿Cuántos años de diferencia tienes con tu hermano? Escribe un programa que muestre el mensaje ¨Nuestra diferencia de edad es¨, concatenando el resultado de la diferencia de tu edad con la de tu hermano (o de un amigo). La respuesta puede dar negativa, sin duda. No olvides de usar las funciones saltarLinea e imprimir y de incluir la etiqueta meta para resolver problemas de acentuación.
+<br>
+        
+        <script>
+        	
+        	function salto() {
+        		document.write("<br>");
+			}
+
+			function pnt(mss) {
+				document.write(mss);
+				document.write("<br>");
+			}
+
+			var b = 67;
+			var c = 44;
+			edadher = (b - c);
+
+			salto();
+			pnt("Mi hermano tiene: " + b);
+			pnt("Yo tengo: " + c);
+			pnt("Nuestra diferencia de edad es de: " + edadher);
+		</script>

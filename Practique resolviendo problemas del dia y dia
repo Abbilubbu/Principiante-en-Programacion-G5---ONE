@@ -1,0 +1,47 @@
+<meta charset="utf-8">
+
+<h1>CALCULAR IMC</h1>
+
+<script>
+	function BR() {
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function print(text) {
+		document.write(text);
+		BR();
+	}
+
+
+	//Conforme vas colocando variables en los corchetes puedes colocar mas cosas
+
+	function CIMCA(p,a) {
+		IMC = p / (a * a);
+		print("El IMC de Abby es de: " + IMC);
+		return(IMC);
+	}
+
+	IMC = CIMCA(67,1.45,"Abby")
+
+	function CIMC(p,a) {
+		IMC = p / (a * a);
+		return(IMC);
+	}
+
+	print("El IMC promedio de Abby y Moises es: " + (CIMC(64,1.75)+CIMC(78,1.34))/2);
+
+	nombre = prompt("Defina su nombre")
+	peso = prompt(nombre + ", defina su peso");
+	altura = prompt(nombre + ", defina su altura");
+
+	IMC = CIMCB(peso,altura,nombre);
+
+	function CIMCB(p,a,n) {
+		IMC = p / (a * a);
+		print("El IMC de " + nombre + " es de: " + IMC);
+		return(IMC);
+	}
+
+</script>

@@ -1,0 +1,58 @@
+<meta charset="utf-8">
+
+<h1>DESAFÍOS</h1>
+<h2>1.-Crea una función de lotería que reciba un número "n" y sortee un número entre 0 a "n", retornando ese valor. De esta forma, en vez de escribir var numeroPensado = Math.round(Math.random()*"n");, escribirás var numeroPensado = sorteo("n");. Realiza esa modificación, creando una nueva función y utilízala de forma correcta.<br>
+2.-Hacer que tu juego exhiba, cuando el usuario falle el intento, si el número lanzado era mayor o menor al número pensando por el programa.<br></h2>
+
+<script>
+	function BR() {
+		document.write("<br>");
+	}
+
+	function print(text) {
+		document.write(text);
+		BR();
+	}
+
+	//Declarando n
+	/*var n = parseInt(prompt("Ingrese el limite de numeros sorteados"));
+	var nuPensado = Math.round(Math.random()* n);
+	var nuLanzado = parseInt(prompt("Ingrese un numero entre 0-" + n));
+
+
+	if (nuPensado == nuLanzado) {
+		print("Usted acerto!")
+	}
+
+	if (nuLanzado < nuPensado) {
+		print("	El numero es menor al pensado!");
+	}
+
+	if (nuLanzado > nuPensado){
+		print("	El numero es mayor al pensado!");
+	}*/
+
+	function sorteo(n) {
+		Math.round(Math.random()*n);
+	}
+
+	var nuPensado = sorteo(10);
+	var nuLanzado = parseInt(prompt("Ingrese un numero entre 0-10"));
+
+	if (nuPensado == nuLanzado) {
+		print("Usted acerto!");
+	}
+
+		else{
+			if (nuLanzado > nuPensado) {
+				print("El numero es menor al pensado!");
+				}
+
+			else {
+				print("El numero es mayor al pensado!")
+				}
+			}
+	
+
+
+</script>

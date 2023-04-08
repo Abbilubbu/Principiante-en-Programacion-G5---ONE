@@ -1,0 +1,164 @@
+<meta charset="utf-8">
+
+<h1>CALCULAR IMC</h1>
+
+<script>
+	function BR() {
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function print(text) {
+		document.write(text);
+		BR();
+	}
+
+
+	//Conforme vas colocando variables en los corchetes puedes colocar mas cosas
+
+	/*function CIMCA(p,a) {
+		IMC = p / (a * a);
+		print("El IMC de Abby es de: " + IMC);
+		return(IMC);
+	}
+
+	IMC = CIMCA(67,1.45,"Abby")
+
+	function CIMC(p,a) {
+		IMC = p / (a * a);
+		return(IMC);
+	}
+
+	print("El IMC promedio de Abby y Moises es: " + (CIMC(64,1.75)+CIMC(78,1.34))/2);*/
+
+	nombre = prompt("Defina su nombre")
+	peso = prompt(nombre + ", defina su peso");
+	altura = prompt(nombre + ", defina su altura");
+
+	IMC = CIMCB(peso,altura,nombre);
+
+	function CIMCB(p,a,n) {
+		IMC = p / (a * a);
+		print("El IMC de " + nombre + " es de: " + IMC);
+		return(IMC);
+	}
+
+	if (IMC < 18.5) {
+		document.write("Abajo de lo recomendado");
+		}
+
+	if (IMC >=18.5) {
+		if (IMC <24.9){
+		document.write("Esta dentro de lo recomendado");
+		}
+		}
+
+	if (IMC >=24.9) {
+		if(IMC <30){
+	  	document.write("Considerado como sobrepeso");
+		}
+		}
+
+	if (IMC >= 30) {
+		document.write("Arriba de lo recomendado");
+		}
+
+
+
+</script>
+
+----------------------------------------------
+
+<meta charset="utf-8">
+
+<h1>PROGRAMA - CALCULAR PUNTOS DE UN EQUIPO DE FUTBOL</h1>
+
+<script>
+
+	function BR() {
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function print(text) {
+		document.write(text);
+		BR();
+	}
+
+	//Texto x Numero = Numero
+	//"10" * 2 = 20
+	//"10" + 20 = 20
+
+	//parseInt vuelve el texto a numero
+
+	var win = parseInt(prompt("Informe la cantidad de victorias"));
+	var worse = parseInt(prompt("Informe la cantidad de empates"));
+
+	pTotal = (win * 3) + worse;
+
+	print("El total de puntos del equipo es: " + pTotal);
+
+	//if son condicionales
+
+	if (pTotal > 28){
+
+		print("El equipo esta mejor que el año pasado");
+
+	}
+
+	if (pTotal < 28){
+
+		print("El equipo esta peor que el año pasado");
+		
+	}
+
+	if (pTotal == 28){
+
+		print("El equipo esta igual que el año pasado");
+		
+	}
+
+</script>
+
+-----------------------------------
+
+<meta charset="utf-8">
+
+<h1>PROGRAMA JUEGO DE ADIVINACION</h1>
+
+<script>
+	function BR() {
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function print(text) {
+		document.write(text);
+		BR();
+	}
+
+	//Math.random formula usada para numeros aleatorios
+	//Colocamos *10 para establecer un limite entre 0 y 10 y Math.round para redondear el resultado
+
+	var nuPensado = Math.round(Math.random()* 10);
+	var nuLanzado = parseInt(prompt("Ingrese un numero entre 0-10"))
+
+
+	if (nuPensado == nuLanzado) {
+		print("Usted acerto!")
+	}
+
+	else{
+		print("Usted erro, el numero pensado era " + nuPensado)
+	}
+
+	//Java utiliza != para identificar que es diferente
+
+	/*if (nuPensado != nuLanzado) {
+		print("Usted erro, el numero pensado era " + nuPensado)
+	}*/
+
+</script>

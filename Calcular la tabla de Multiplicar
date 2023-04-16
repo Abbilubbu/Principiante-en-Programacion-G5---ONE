@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA - CALCULAR LA TABLA DE MULTIPLICAR</h1>
+
+<script>
+
+	function BR() {
+		document.write("<br>");
+	}
+
+	function print(text){
+		document.write(text);
+		BR();
+	}
+
+	var multiplicador = 1
+
+	print("<h1>WHILE</h1>")
+
+	while (multiplicador <= 10) {
+
+		print(5 * multiplicador);
+
+		multiplicador++;
+	
+		}
+
+	print("<h1>FOR</h1>")
+
+	//3 Partes 1.Inicializacion de la variables 2.Condicion 3.Incrementador
+
+	//++ Incrementa de 1 a 1
+	
+	for (var multiplicador = 1; multiplicador <= 10;multiplicador++) {
+		print(5 * multiplicador);
+	}
+
+</script>

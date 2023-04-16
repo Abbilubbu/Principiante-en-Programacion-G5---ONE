@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+
+<input/>
+<button>Verificar si acerto el secreto</button>
+
+<script>
+
+	//Input genera un cuadro > Button un boton > querySelector me seleciona la caja
+
+	var ST = Math.round(Math.random()*10);
+	var input = document.querySelector("input");
+	input.focus();
+
+	function check() {
+
+		if (parseInt(input.value) == ST) {
+
+			alert("Usted acerto!");
+
+		}
+
+		else{
+
+			alert("Usted no acerto!");
+		}
+
+		//Deja en blanco la casilla > input.focus quita la necesidad de dar click
+		input.value = "";
+		input.focus();
+	}
+
+	//button.onclick ejecuta el boton
+	
+	var button = document.querySelector("button");
+	button.onclick = check;
+
+</script>

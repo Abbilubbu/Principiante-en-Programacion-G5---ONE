@@ -1,0 +1,162 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA AÑO MUNDIAL DE LA FIFA</h1>
+
+<script>
+
+	function BR() {
+		document.write("<br>");
+	}
+
+	function print(text){
+		document.write(text);
+		BR();
+	}
+
+	var aMundial = 1930;
+	var lim = parseInt(prompt("Ingrese el año limite a calcular"))
+
+	//alert("Hubo mundial de la FIFA en el año " + aMundial);
+
+	//While se utiliza como loop para no repetir muchas lineas de codigo
+
+	while(aMundial <= lim){
+
+		print("Hubo mundial de la FIFA en el año " + aMundial);
+		aMundial = aMundial + 4;
+		}
+
+	//alert("Fin");
+
+
+
+</script>
+
+
+<meta charset="UTF-8">
+
+<h1>PROGRAMA - CALCULAR LA MEDIA DE LAS EDADES DE UNA FAMILIA</h1>
+
+<script>
+
+	function BR() {
+		document.write("<br>");
+	}
+
+	function print(text){
+		document.write(text);
+		BR();
+	}
+
+	/*var ageD = 42;
+	var ageM = 38;
+	var ageB = 15;
+	var ageS = 12;
+
+	var ageT = ageS + ageB + ageD + ageM;
+	var ageMe = ageT / 4;
+
+	print("La media de las edades es " + ageMe);*/
+
+	var NM = parseInt(prompt("Ingrese la cantidad de miembros de su familia"));
+	var C = 1;
+	var Tage = 0;
+
+	while(C <= NM){
+
+		age = parseInt(prompt("Ingrese la edad del familiar"));
+		Tage = Tage + age;
+		C++;
+
+	}
+
+	ageMed = Tage / NM;
+	print("La media de la familia es " + ageMed); 
+
+</script>
+
+<meta charset="utf-8">
+
+<h1>PROGRAMA - Estrellas</h1>
+
+<script>
+	function BR() {
+		document.write("<br>");
+	}
+
+	function print(text) {
+		document.write(text);
+		BR();
+	}
+
+
+	for (var lin = 1; lin <= 3; lin++) {
+		 
+		for (var col = 1; col <= 10; col++){
+		 document.write("*");
+		}
+
+		BR();
+	}
+
+</script>
+
+<meta charset="utf-8">
+
+<h1>PROGRAMA - JUEGO DE ADIVINACION</h1>
+
+<script>
+	function BR() {
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function print(text) {
+		document.write(text);
+		BR();
+	}
+
+	//Math.random formula usada para numeros aleatorios
+	//Colocamos *10 para establecer un limite entre 0 y 10 y Math.round para redondear el resultado
+
+	//Break para el codigo en while
+
+	var nuPensado = Math.round(Math.random()* 10);
+	var Int = 3;
+	var C = 1;
+
+
+	while(C <= Int){
+
+		var nuLanzado = parseInt(prompt("Ingrese un numero entre 0-10"))
+
+			if (nuPensado == nuLanzado) {
+				alert("Usted acertó, en el intento " + C + " el numero pensado era " + nuPensado);
+				break;
+			}
+
+			else{
+				alert("Usted erró")
+			}
+
+			C++;
+
+			}
+
+			if (nuPensado == nuLanzado) {
+				print("Usted acertó, en el intento " + C + " el numero pensado era " + nuPensado);
+			}
+
+			else{
+				print("Usted erró, el numero pensado era " + nuPensado);
+			}
+
+
+	//Java utiliza != para identificar que es diferente
+
+	/*if (nuPensado != nuLanzado) {
+		print("Usted erro, el numero pensado era " + nuPensado)
+	}*/
+
+</script>

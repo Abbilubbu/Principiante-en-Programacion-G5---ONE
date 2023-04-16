@@ -1,0 +1,33 @@
+<meta charset="utf-8">
+
+<h1>SIMULANDO UNA PANTALLA DE INICIO DE SESION</h1>
+
+<script>
+
+	var IDSR = "alura";
+	var CR = "alura321";
+	var Int = 3;
+	var C = 1;
+
+	while(C <= Int){
+
+		var IDSI = prompt("Ingrese su usuario");
+		var CI = prompt("Ingrese su contraseña");
+
+		if( IDSR == IDSR && CR == CI ) {
+        	alert("Bienvenido al sistema " + CI);
+        	break;
+    	} 
+
+    	if (C == Int) {
+		alert("No es posible iniciar sesión, intentelo mas tarde")
+		}
+
+    	else {
+        alert("Inicio de sesión inválido. Favor intente de nuevo");
+    	}
+
+    	C++;
+	}
+	
+</script>
